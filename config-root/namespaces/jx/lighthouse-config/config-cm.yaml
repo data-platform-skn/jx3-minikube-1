@@ -7,6 +7,8 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        data-platform-skn/jx3-golang: true
+        data-platform-skn/jx3-golang-1: true
         data-platform-skn/jx3-minikube-1: true
     plank: {}
     pod_namespace: jx
@@ -19,6 +21,8 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        data-platform-skn/jx3-golang: merge
+        data-platform-skn/jx3-golang-1: merge
         data-platform-skn/jx3-minikube-1: merge
       queries:
       - labels:
@@ -31,6 +35,8 @@ data:
         - needs-rebase
         repos:
         - data-platform-skn/jx3-minikube-1
+        - data-platform-skn/jx3-golang-1
+        - data-platform-skn/jx3-golang
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +47,8 @@ data:
         - needs-rebase
         repos:
         - data-platform-skn/jx3-minikube-1
+        - data-platform-skn/jx3-golang-1
+        - data-platform-skn/jx3-golang
       target_url: http://dashboard-jx.192.168.64.7.nip.io
 kind: ConfigMap
 metadata:
