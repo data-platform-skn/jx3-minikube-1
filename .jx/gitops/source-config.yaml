@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: jx3-golang-1
+    - name: jx3-sb
     - name: jx3-springboot
     scheduler: in-repo
   slack:
