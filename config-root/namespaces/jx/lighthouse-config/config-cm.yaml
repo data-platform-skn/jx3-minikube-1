@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - data-platform-skn/jx3-minikube-1
-      target_url: http://dashboard-jx.
+      target_url: http://dashboard-jx.192.168.64.7.nip.io
 kind: ConfigMap
 metadata:
   creationTimestamp: null
