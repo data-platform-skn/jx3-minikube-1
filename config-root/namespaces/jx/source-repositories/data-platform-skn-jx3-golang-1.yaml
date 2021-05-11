@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: data-platform-skn
+    provider: github
+    repository: jx3-golang-1
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: data-platform-skn-jx3-golang-1
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/data-platform-skn/jx3-golang-1.git
+  org: data-platform-skn
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx3-golang-1
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/data-platform-skn/jx3-golang-1
